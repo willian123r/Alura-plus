@@ -4,6 +4,7 @@
     --botao-azul: #167bf7;
     --cor-de-fundo: #00030c;
     --fonte-principal: "Inter";
+    --botao-azul-efeito: #3c92fa;
 }
 
 * {
@@ -34,7 +35,7 @@ body {
 }
 
 .container_botao {
-    background-color: var(--botao-azul);
+    background-color:  var(--botao-azul);
     border-radius: 5px;
     padding: 1em;
     color: var(--branco-principal);
@@ -45,7 +46,7 @@ body {
 
 .botao_secundario {
     background-color: transparent;
-    border: 2px solid var(--branco-principal);   
+    border: 2px solid var(--branco-principal);
 }
 
 .container_aviso {
@@ -66,22 +67,102 @@ body {
     margin: 0 6em;
 }
 
-.imagem_secundario{
+.secundario_imagem {
     width: 80%;
 }
 
-.secundario{
-    align-items: cente;
-    margin: ;
+.secundario {
+    align-items: center;
+    margin: 0 10em;
 }
 
-.descricao_titulo{
-    font-weight:700;
-    font-size: 46px;
+.descricao_titulo {
+    font-weight: 700;
+    font-size: 48px;
     color: var(--branco-principal);
-    margin: 0.1em;
+    margin-bottom: 0.1em;
 }
 
-.descricao_texto{
+.descricao_texto {
     color: var(--cinza-secundario);
+}
+
+.secundario_botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container_descricao {
+    padding: 2em;
+}
+
+.dispositivos_lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+    margin: 5em 0;
+}
+
+.dispositivos_titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista_item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 2em 8em;
+}
+
+.rodape_lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 2em;
+}
+
+.lista_link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 2em;
+}
+
+.lista_link {
+    margin-bottom: 1em;
+}
+
+.rodape_texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.rodape_logo {
+    margin-top: 5em;
+}
+
+.lista_link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista_link a:active {
+    color: red;
+}
+
+.container_botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+.dispositivos_lista li:hover {
+    background-color: var(--botao-azul);
 }
